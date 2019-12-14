@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,29 @@
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/main.js"></script>
 </head>
+
 <body>
     <h1>Hello blog</h1>
+    <form>
+        <fieldset class="post">
+            <legend>Create post</legend>
+            
+            <input class="post__text" id="title" placeholder="Title" />
+            <input class="post__text" id="seo-url" placeholder="Seo url" />
+            <input class="post__text" id="short-description" placeholder="Short description" />
+
+            <textarea class="post__text" id="full-description" placeholder="Full description"></textarea>
+
+
+            <label>
+                <input id="status" type="checkbox" />
+            </label>
+            <button id="send-post" type="button">Create</button>
+        </fieldset>
+    </form>
+    <table id="posts-list">
+
+    </table>
 </body>
+
 </html>
